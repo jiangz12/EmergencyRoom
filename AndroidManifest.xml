@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="group0313.com.example.emergencyroom"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="group0313.com.example.emergencyroom.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="group0313.com.example.emergencyroom.NurseActivity"
+            android:label="@string/title_activity_nurse" >
+        </activity>
+        <activity
+            android:name="group0313.com.example.emergencyroom.RecordActivity"
+            android:label="@string/title_activity_record" >
+        </activity>
+        <activity
+            android:name="group0313.com.example.emergencyroom.RegisterPatientActivity"
+            android:label="@string/title_activity_register_patient" >
+        </activity>
+        <activity
+            android:name="group0313.com.example.emergencyroom.UpdateRecordActivity"
+            android:label="@string/title_activity_update_record" >
+        </activity>
+        <activity
+            android:name="group0313.com.example.emergencyroom.ShowRecordActivity"
+            android:label="@string/title_activity_show_record" >
+        </activity>
+        <activity
+            android:name="group0313.com.example.emergencyroom.NurseLoginActivity"
+            android:label="@string/title_activity_nurse_login" >
+        </activity>
+        <activity
+            android:name="group0313.com.example.emergencyroom.PhysicianActivity"
+            android:label="@string/title_activity_physician" >
+        </activity>
+        <activity
+            android:name="group0313.com.example.emergencyroom.PrescriptionActivity"
+            android:label="@string/title_activity_prescription" >
+        </activity>
+        <activity
+            android:name="group0313.com.example.emergencyroom.PhysicianLoginActivity"
+            android:label="@string/title_activity_physician_login" >
+        </activity>
+        <activity
+            android:name="group0313.com.example.emergencyroom.CheckUpActivity"
+            android:label="@string/title_activity_checkup" >
+        </activity>
+        <activity
+            android:name="group0313.com.example.emergencyroom.OrderPatientActivity"
+            android:label="@string/title_activity_order_patient" >
+        </activity>
+    </application>
+
+</manifest>

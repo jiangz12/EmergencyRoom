@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".UpdateRecordActivity" >
+
+    <EditText
+        android:id="@+id/temperature_field"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/search_card_field"
+        android:layout_below="@+id/search_card_field"
+        android:ems="10"
+        android:hint="@string/temperature"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/systole_field"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/temperature_field"
+        android:layout_below="@+id/temperature_field"
+        android:ems="10"
+        android:hint="@string/systole"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/diastole_field"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/systole_field"
+        android:layout_below="@+id/systole_field"
+        android:ems="10"
+        android:hint="@string/diastole"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/heart_rate_field"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/diastole_field"
+        android:layout_below="@+id/diastole_field"
+        android:ems="10"
+        android:hint="@string/heart_rate"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/errortext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heart_rate_field"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="52dp"
+        android:onClick="back"
+        android:textSize="15sp"
+        android:text="@string/back" />
+
+    <Button
+        android:id="@+id/update_record"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_above="@+id/back"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:onClick="updatePatient"
+        android:textSize="15sp"
+        android:text="@string/update_record" />
+
+    <EditText
+        android:id="@+id/search_card_field"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="@string/patient_health_card"
+        android:textSize="15sp" />
+
+</RelativeLayout>

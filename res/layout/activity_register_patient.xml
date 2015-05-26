@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".RegisterPatientActivity" >
+    
+    <TextView
+        android:id="@+id/newly_registered"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+
+    <EditText
+        android:id="@+id/birth_date_field"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/patient_name_field"
+        android:layout_below="@+id/patient_name_field"
+        android:ems="10"
+        android:hint="@string/patient_birthdate" />
+
+    <EditText
+        android:id="@+id/health_card_field"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/birth_date_field"
+        android:layout_below="@+id/birth_date_field"
+        android:ems="10"
+        android:hint="@string/patient_health_card" />
+
+    <TextView
+        android:id="@+id/errortext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/health_card_field"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/patient_name_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newly_registered"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/patient_name"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/register_patient"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@+id/errortext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:onClick="register_patient"
+        android:textSize="15sp"
+        android:text="@string/register_patient" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@+id/register_patient"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:onClick="back"
+        android:textSize="15sp"
+        android:text="@string/back" />
+
+</RelativeLayout>
